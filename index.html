@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIED公益三阶第17期 - 学员培训展示平台</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.header .meta {
+  font-size: 13px;
+  opacity: 0.85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.filter-bar {
+  padding: 12px 32px;
+  background: white;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #e8ecf1;
+}
+.filter-bar input {
+  padding: 6px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.filter-bar input:focus {
+  border-color: #667eea;
+}
+.filter-bar select {
+  padding: 6px 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+}
+.refresh-btn {
+  padding: 6px 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.refresh-btn:hover { background: #5a6fd6; }
+.refresh-btn:disabled { background: #bbb; cursor: not-allowed; }
+.auto-refresh {
+  font-size: 12px;
+  color: #888;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.content {
+  padding: 20px 32px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  font-size: 13px;
+}
+thead th {
+  background: #f7f9fc;
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e8ecf1;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+thead th.small { font-size: 11px; }
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f2f5;
+  vertical-align: middle;
+}
+tbody tr:hover { background: #f7f9ff; }
+.lecture-dots {
+  display: flex;
+  gap: 3px;
+}
+.dot {
+  width: 20px; height: 20px;
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+.dot-done { background: #c8e6c9; color: #2e7d32; }
+.dot-empty { background: #f5f5f5; color: #ccc; }
+.time-text { font-size: 12px; color: #666; white-space: nowrap; }
+.lecture-time-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+.lecture-time-empty {
+  font-size: 12px;
+  color: #ccc;
+}
+.weekly-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.weekly-yes { background: #c8e6c9; color: #2e7d32; }
+.weekly-no { background: #f5f5f5; color: #999; }
+.footer {
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+.loading-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999;
+  font-size: 16px; color: #667eea;
+}
+.loading-overlay.hidden { display: none; }
+.no-data {
+  text-align: center; padding: 60px; color: #999; font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MIED公益三阶第17期 - 师资培训展示平台</h1>
+  <div class="meta">
+    <span>数据来源: 腾讯文档智能表格</span>
+    <span id="updateTime">--</span>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <input type="text" id="searchInput" placeholder="搜索学员姓名..." oninput="renderTable()">
+  <select id="mockFilter" onchange="renderTable()">
+    <option value="">未完成模拟讲座带领: 全部</option>
+    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+  </select>
+  <select id="ledFilter" onchange="renderTable()">
+    <option value="">未完成真实讲座带领: 全部</option>
+    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+  </select>
+  <select id="reportFilter" onchange="renderTable()">
+    <option value="">未提交真实讲座报告: 全部</option>
+    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+  </select>
+  <select id="weekFilter" onchange="renderTable()">
+    <option value="">本周是否更新: 全部</option>
+    <option value="yes">是</option>
+    <option value="no">否</option>
+  </select>
+  <button class="refresh-btn" id="refreshBtn" onclick="refreshData()">🔄 手动刷新数据</button>
+</div>
+
+<div class="content">
+  <div class="loading-overlay hidden" id="loadingOverlay">⏳ 正在刷新数据...</div>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th rowspan="2" style="min-width:70px">学员姓名</th>
+        <th class="small" colspan="4">模拟讲座</th>
+        <th class="small" colspan="6">真实讲座带领</th>
+        <th class="small" colspan="6">报告提交</th>
+        <th rowspan="2" style="min-width:160px">最新报告及时间</th>
+        <th rowspan="2" style="min-width:130px">报告最近更新</th>
+        <th rowspan="2" style="min-width:90px">本周是否更新</th>
+      </tr>
+      <tr>
+        <th class="small">1</th><th class="small">2</th><th class="small">3</th><th class="small">4</th>
+        <th class="small">1</th><th class="small">2</th><th class="small">3</th>
+        <th class="small">4</th><th class="small">5</th><th class="small">6</th>
+        <th class="small">1</th><th class="small">2</th><th class="small">3</th>
+        <th class="small">4</th><th class="small">5</th><th class="small">6</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  <div class="no-data hidden" id="noData">暂无数据</div>
+</div>
+
+<div class="footer">
+  MIED公益三阶第17期师资培训展示平台 · 点击"手动刷新数据"获取最新数据 · Powered by WorkBuddy + 腾讯文档
+</div>
+
+<script>
+// ========== 数据层 ==========
+let dashboardData = null;
+
+function loadData() {
+  return fetch('dashboard_data.json?t=' + Date.now())
+    .then(r => r.json())
+    .catch(() => Promise.resolve(typeof EMBEDDED_DATA !== 'undefined' ? EMBEDDED_DATA : {students: []}));
+}
+
+// ========== 渲染层 ==========
+function renderTable() {
+  if (!dashboardData) return;
+  
+  const search = (document.getElementById('searchInput')?.value || '').toLowerCase();
+  const mockFilter = document.getElementById('mockFilter')?.value || '';
+  const ledFilter = document.getElementById('ledFilter')?.value || '';
+  const reportFilter = document.getElementById('reportFilter')?.value || '';
+  const weekFilter = document.getElementById('weekFilter')?.value || '';
+  
+  let students = dashboardData.students.filter(s => {
+    if (search && !s.name.toLowerCase().includes(search)) return false;
+    if (mockFilter && hasCompleted(s.mock_list, mockFilter)) return false;
+    if (ledFilter && hasCompleted(s.led_list, ledFilter)) return false;
+    if (reportFilter && hasCompleted(s.reported_list, reportFilter)) return false;
+    if (weekFilter === 'yes' && !isThisWeek(s.last_modify_time)) return false;
+    if (weekFilter === 'no' && isThisWeek(s.last_modify_time)) return false;
+    return true;
+  });
+
+  // 按拼音 A-Z 排序
+  students.sort(function(a, b) {
+    return a.name.localeCompare(b.name, 'zh-Hans-CN');
+  });
+  
+  const tbody = document.getElementById('tableBody');
+  const noData = document.getElementById('noData');
+  
+  if (students.length === 0) {
+    tbody.innerHTML = '';
+    noData.classList.remove('hidden');
+    return;
+  }
+  noData.classList.add('hidden');
+  
+  tbody.innerHTML = students.map(s => `
+    <tr>
+      <td><strong>${esc(s.name)}</strong></td>
+      ${renderDots(s.mock_list, 4)}
+      ${renderDots(s.led_list, 6)}
+      ${renderDots(s.reported_list, 6)}
+      <td>
+        ${s.lecture_time
+          ? `<span class="lecture-time-text">${esc(s.latest_report || '报告')}: ${esc(s.lecture_time)}</span>`
+          : '<span class="lecture-time-empty">--</span>'}
+      </td>
+      <td class="time-text">${s.last_modify_time || '--'}</td>
+      <td>${weeklyBadge(s.last_modify_time)}</td>
+    </tr>
+  `).join('');
+}
+
+function renderDots(list, total) {
+  // 兼容两种格式: 字符串数组 ["1","3"] 或 布尔数组 [true,false,true]
+  let html = '';
+  for (let i = 1; i <= total; i++) {
+    let done = false;
+    if (Array.isArray(list)) {
+      // 格式1: ["1", "3"]
+      if (typeof list[0] === 'string') {
+        done = list.indexOf(String(i)) !== -1;
+      }
+      // 格式2: [true, false, true, false]
+      else if (typeof list[0] === 'boolean') {
+        done = list[i - 1] === true;
+      }
+      // 格式3: 数字数组
+      else if (typeof list[0] === 'number') {
+        done = list.indexOf(i) !== -1;
+      }
+    }
+    html += `<td><div class="dot ${done ? 'dot-done' : 'dot-empty'}">${done ? '✓' : ''}</div></td>`;
+  }
+  return html;
+}
+
+function hasCompleted(list, num) {
+  if (!Array.isArray(list) || list.length === 0) return false;
+  return list.indexOf(String(num)) !== -1;
+}
+
+function isThisWeek(timeStr) {
+  if (!timeStr || timeStr === '--') return false;
+  var m = timeStr.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return false;
+  var d = new Date(parseInt(m[1]), parseInt(m[2])-1, parseInt(m[3]));
+  var now = new Date();
+  // 7 days ago (start of day)
+  var weekAgo = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 6);
+  return d >= weekAgo;
+}
+
+function weeklyBadge(timeStr) {
+  if (!timeStr || timeStr === '--') return '<span class="weekly-badge weekly-no">否</span>';
+  var m = timeStr.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return '<span class="weekly-badge weekly-no">否</span>';
+  return isThisWeek(timeStr)
+    ? '<span class="weekly-badge weekly-yes">是</span>'
+    : '<span class="weekly-badge weekly-no">否</span>';
+}
+
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function updateTimeDisplay() {
+  if (dashboardData) {
+    var t = dashboardData.generated_at || dashboardData.update_time || '--';
+    document.getElementById('updateTime').textContent = '数据更新时间: ' + t;
+  }
+}
+
+// ========== 刷新逻辑 ==========
+function refreshData() {
+  var btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ 刷新中...';
+  location.reload();
+}
+
+// ========== 初始化 ==========
+function init() {
+  loadData().then(data => {
+    dashboardData = data;
+    renderTable();
+    updateTimeDisplay();
+  }).catch(err => {
+    console.error('初始化失败:', err);
+  });
+}
+
+</script>
+
+<!-- 嵌入静态数据作为fallback -->
+<script>
+const EMBEDDED_DATA = {"generated_at": "2026-08-04 09:38:35", "total_students": 40, "students": [{"name": "苏凤然", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-苏凤然", "report_url": "https://docs.qq.com/doc/DTkN2TGFwa0VzR2xt#", "lecture_time": "2026-08-03", "last_modify_time": "2026-08-03 13:42", "latest_report": "报告2", "latest_report_num": 2}, {"name": "段海容", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-段海容", "report_url": "https://docs.qq.com/doc/DTE9rZWpqdVNUWm5m", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 20:02", "latest_report": "报告2", "latest_report_num": 2}, {"name": "孙英", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-孙英", "report_url": "https://docs.qq.com/doc/DQkZ3TG14aGhsdU9D", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 21:27", "latest_report": "报告2", "latest_report_num": 2}, {"name": "李志", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-李志", "report_url": "https://docs.qq.com/doc/DYk5rS2xscG9xSnFs", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 00:41", "latest_report": "报告2", "latest_report_num": 2}, {"name": "董雪娟", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-董雪娟", "report_url": "https://docs.qq.com/doc/DY0NVSHdwUWRIemtF#", "lecture_time": "2026-07-30", "last_modify_time": "2026-08-01 17:20", "latest_report": "报告2", "latest_report_num": 2}, {"name": "屈佩珊", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-屈佩珊", "report_url": "https://docs.qq.com/doc/DTnRQYVpFdndvQ1p1", "lecture_time": "2026-07-30", "last_modify_time": "2026-08-01 21:20", "latest_report": "报告2", "latest_report_num": 2}, {"name": "王琳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-王琳", "report_url": "https://docs.qq.com/doc/DU2RSZ0VoSHpHSGds", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-31 23:40", "latest_report": "报告2", "latest_report_num": 2}, {"name": "高扬", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-高扬", "report_url": "https://docs.qq.com/doc/DQkRBbVBnYU5RZVRs", "lecture_time": "2026-07-30", "last_modify_time": "2026-08-03 20:39", "latest_report": "报告2", "latest_report_num": 2}, {"name": "刘伟", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-刘伟", "report_url": "https://docs.qq.com/doc/DSkNDc1N1c2JTR1Zh", "lecture_time": "2026-08-02", "last_modify_time": "2026-08-02 23:16", "latest_report": "报告2", "latest_report_num": 2}, {"name": "王振发", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-王振发", "report_url": "https://docs.qq.com/doc/DSXhQamZnYmZOcXpQ", "lecture_time": "2026-08-02", "last_modify_time": "2026-08-02 19:30", "latest_report": "报告2", "latest_report_num": 2}, {"name": "苏秀梅", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-苏秀梅", "report_url": "https://docs.qq.com/doc/DZmNiRVhuUEZzWE5N", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 14:53", "latest_report": "报告2", "latest_report_num": 2}, {"name": "刘春晖", "total_led": 0, "total_reported": 0, "total_mock": 1, "mock_list": ["1"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告", "report_url": "https://docs.qq.com/doc/DWVZURXhFc25FRVF2", "lecture_time": "2026-07-31", "last_modify_time": "2026-08-03 20:25", "latest_report": "报告2", "latest_report_num": 2}, {"name": "陈硕", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-陈硕", "report_url": "https://docs.qq.com/doc/DQ21QUW9pdURiYWZE", "lecture_time": "2026-07-31", "last_modify_time": "2026-08-03 19:24", "latest_report": "报告2", "latest_report_num": 2}, {"name": "孙艳丽", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-孙艳丽", "report_url": "https://docs.qq.com/doc/DQkZ3cFhqcW1Cc05r?nlc=1", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 19:46", "latest_report": "报告2", "latest_report_num": 2}, {"name": "黄琳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-黄琳", "report_url": "https://docs.qq.com/doc/DSGVaRFdzZVFGZkhU", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 09:16", "latest_report": "报告2", "latest_report_num": 2}, {"name": "孙家丽", "total_led": 0, "total_reported": 0, "total_mock": 1, "mock_list": ["1"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-孙家丽", "report_url": "https://docs.qq.com/doc/DTXB3ZVJBYVRPZGVX", "lecture_time": "2026-07-17", "last_modify_time": "2026-07-28 13:35", "latest_report": "模拟讲座报告1", "latest_report_num": 1}, {"name": "李梦娜", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-李梦娜", "report_url": "https://docs.qq.com/doc/DRXRQdVNDTG5VR3FW", "lecture_time": "2026-08-03", "last_modify_time": "2026-08-03 23:31", "latest_report": "报告2", "latest_report_num": 2}, {"name": "徐星艳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-徐星艳", "report_url": "https://docs.qq.com/doc/DTXJMZXJ5R1B3bE1K", "lecture_time": "2026-08-03", "last_modify_time": "2026-08-03 17:21", "latest_report": "报告2", "latest_report_num": 2}, {"name": "郑诗雨", "total_led": 0, "total_reported": 0, "total_mock": 1, "mock_list": ["1"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-郑诗雨", "report_url": "https://docs.qq.com/doc/DVUhHUUdXRVh0b0xo", "lecture_time": "2026-07-17", "last_modify_time": "2026-07-28 20:42", "latest_report": "模拟讲座报告1", "latest_report_num": 1}, {"name": "郭晓娟", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-郭晓娟", "report_url": "https://docs.qq.com/doc/DRE54bFJyQWJmTmxG", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 15:57", "latest_report": "报告2", "latest_report_num": 2}, {"name": "王利娟", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-1（王利娟）", "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV", "lecture_time": "2026-07-23", "last_modify_time": "2026-07-28 10:31", "latest_report": "模拟讲座报告1", "latest_report_num": 1}, {"name": "孙永红", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-孙永红", "report_url": "https://docs.qq.com/doc/DR0hteEpLRUtoYUVX", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-31 11:46", "latest_report": "报告2", "latest_report_num": 2}, {"name": "李亚云", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-李亚云", "report_url": "https://docs.qq.com/doc/DVUJXZUpORkhIS0hI?nlc=1", "lecture_time": "2026-08-02", "last_modify_time": "2026-08-02 19:52", "latest_report": "报告2", "latest_report_num": 2}, {"name": "龚辰炜", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-龚辰炜", "report_url": "https://docs.qq.com/doc/DQUV5Q0tQcFJEeEZk", "lecture_time": "2026-08-02", "last_modify_time": "2026-08-02 22:50", "latest_report": "报告3", "latest_report_num": 3}, {"name": "赵青", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-赵青", "report_url": "https://docs.qq.com/doc/DYXFGRG1pRGxWc3FJ", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 17:19", "latest_report": "报告2", "latest_report_num": 2}, {"name": "张佳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-张佳", "report_url": "https://docs.qq.com/doc/DRU5RRkZLaFVCaGxF", "lecture_time": "2026-07-30", "last_modify_time": "2026-08-02 23:47", "latest_report": "报告2", "latest_report_num": 2}, {"name": "吴岳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-吴岳", "report_url": "https://docs.qq.com/doc/DYXRERVRkU2hoc1ZU", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 19:47", "latest_report": "报告2", "latest_report_num": 2}, {"name": "范雯祎", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-范雯祎", "report_url": "https://docs.qq.com/doc/DY3B6UXpIQ2paek1v", "lecture_time": "110min", "last_modify_time": "2026-08-01 12:35", "latest_report": "报告2", "latest_report_num": 2}, {"name": "胡晓颖", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-胡晓颖", "report_url": "https://docs.qq.com/doc/DYmpoTmdxWWNuWGhW", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-03 11:22", "latest_report": "报告2", "latest_report_num": 2}, {"name": "付蓉蓉", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-付蓉蓉", "report_url": "https://docs.qq.com/doc/DSUR2VFdkZFpCUmh3#", "lecture_time": "2026-08-04", "last_modify_time": "2026-08-04 00:31", "latest_report": "报告2", "latest_report_num": 2}, {"name": "柴华", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-柴华（姓名）", "report_url": "https://docs.qq.com/doc/DQUJBR3dYVUx4TGtS", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-01 13:33", "latest_report": "报告2", "latest_report_num": 2}, {"name": "陈超美", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-陈超美", "report_url": "https://docs.qq.com/doc/DV2RkcmZhY2xWem9m", "lecture_time": "2026-07-29", "last_modify_time": "2026-07-29 15:44", "latest_report": "报告2", "latest_report_num": 2}, {"name": "张圣楠", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-张圣楠", "report_url": "https://docs.qq.com/doc/DZnd3bnhVVWVHUnNn", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 18:55", "latest_report": "报告2", "latest_report_num": 2}, {"name": "刘萍", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-刘萍", "report_url": "https://docs.qq.com/doc/DVWVtdkdycFZScWtk?nlc=1", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-01 18:51", "latest_report": "报告2", "latest_report_num": 2}, {"name": "李越阳", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-1（李越阳）", "report_url": "https://docs.qq.com/doc/DQ2pUbG9jTExiVUNm", "lecture_time": "2026-07-29", "last_modify_time": "2026-07-29 21:13", "latest_report": "报告2", "latest_report_num": 2}, {"name": "陈小晨", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-陈小晨（姓名）", "report_url": "https://docs.qq.com/doc/DVkdHVkxNSWxEbGNa", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 18:17", "latest_report": "报告2", "latest_report_num": 2}, {"name": "马淑华", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-马淑华", "report_url": "https://docs.qq.com/doc/DZXZPUExodmNuYUFU", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-01 22:33", "latest_report": "报告2", "latest_report_num": 2}, {"name": "黄彬彬", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-黄彬彬", "report_url": "https://docs.qq.com/doc/DZEh6RnNIQm1Gakp2", "lecture_time": "2026-07-30", "last_modify_time": "2026-07-30 22:56", "latest_report": "报告2", "latest_report_num": 2}, {"name": "马昌丽", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告马昌丽", "report_url": "https://docs.qq.com/doc/DRFREZG9UUmtiYXdn", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 14:44", "latest_report": "报告2", "latest_report_num": 2}, {"name": "邢文馨", "total_led": 0, "total_reported": 0, "total_mock": 2, "mock_list": ["1", "2"], "led_list": [], "reported_list": [], "report_title": "讲座实习报告-邢文馨", "report_url": "https://docs.qq.com/doc/DZEtSaERBbXpkWU10", "lecture_time": "2026-08-01", "last_modify_time": "2026-08-02 12:01", "latest_report": "报告2", "latest_report_num": 2}], "stats": {"total": 40, "has_report": 40, "has_lecture_time": 40}};
+init();
+</script>
+
+</body>
+</html>
