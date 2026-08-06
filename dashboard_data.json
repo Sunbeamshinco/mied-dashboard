@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06 09:12:54",
+  "generated_at": "2026-08-06 09:17:40",
   "total_students": 40,
   "students": [
     {
@@ -651,7 +651,7 @@
     "reported_count": 0,
     "mock_count": 40,
     "has_report": 40,
-    "has_lecture_time": 3,
+    "has_lecture_time": 2,
     "has_internal_title": 3
   }
 }
