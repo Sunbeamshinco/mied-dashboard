@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19 10:09:34",
+  "generated_at": "2026-08-20 10:07:35",
   "total_students": 40,
   "students": [
     {
@@ -663,8 +663,8 @@
     },
     {
       "name": "刘萍",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -672,14 +672,18 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DVWVtdkdycFZScWtk?nlc=1",
-      "lecture_time": "2026-08-15",
-      "last_modify_time": "2026-08-15 20:02",
-      "latest_report": "模拟讲座报告4",
-      "latest_report_num": 4
+      "lecture_time": "2026-08-19",
+      "last_modify_time": "2026-08-19 22:36",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "李越阳",
