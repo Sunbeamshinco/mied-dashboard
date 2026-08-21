@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20 10:07:35",
+  "generated_at": "2026-08-21 10:08:11",
   "total_students": 40,
   "students": [
     {
@@ -98,7 +98,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DY0NVSHdwUWRIemtF#",
       "lecture_time": "2026-08-13",
-      "last_modify_time": "2026-08-18 10:22",
+      "last_modify_time": "2026-08-20 15:02",
       "latest_report": "模拟讲座报告4",
       "latest_report_num": 4
     },
@@ -416,10 +416,10 @@
       "reported_list": [],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV",
-      "lecture_time": "2026-08-16",
-      "last_modify_time": "2026-08-17 11:06",
-      "latest_report": "模拟讲座报告4",
-      "latest_report_num": 4
+      "lecture_time": "2026-08-19",
+      "last_modify_time": "2026-08-20 11:11",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "孙永红",
@@ -643,8 +643,8 @@
     },
     {
       "name": "张圣楠",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -652,14 +652,18 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "MIED讲座报告-督导用",
-      "report_url": "https://docs.qq.com/doc/DZnJhV29WdWpzdFBO",
-      "lecture_time": "",
-      "last_modify_time": "2026-08-16 14:47",
-      "latest_report": "",
-      "latest_report_num": 0
+      "report_url": "https://docs.qq.com/doc/DZnd3bnhVVWVHUnNn",
+      "lecture_time": "2026-08-13",
+      "last_modify_time": "2026-08-21 00:40",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "刘萍",
@@ -809,6 +813,6 @@
   "stats": {
     "total": 40,
     "has_report": 40,
-    "has_lecture_time": 39
+    "has_lecture_time": 40
   }
 }
