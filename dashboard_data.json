@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24 10:16:14",
+  "generated_at": "2026-08-25 10:07:43",
   "total_students": 40,
   "students": [
     {
@@ -228,8 +228,8 @@
     },
     {
       "name": "刘春晖",
-      "total_led": 1,
-      "total_reported": 1,
+      "total_led": 2,
+      "total_reported": 2,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -238,15 +238,17 @@
         "4"
       ],
       "led_list": [
-        "1"
+        "1",
+        "2"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2"
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DWVZURXhFc25FRVF2",
-      "lecture_time": "2026-08-17",
-      "last_modify_time": "2026-08-23 21:12",
+      "lecture_time": "2026-08-24",
+      "last_modify_time": "2026-08-24 23:38",
       "latest_report": "报告10",
       "latest_report_num": 10
     },
@@ -314,18 +316,19 @@
       "name": "孙家丽",
       "total_led": 0,
       "total_reported": 0,
-      "total_mock": 3,
+      "total_mock": 4,
       "mock_list": [
         "1",
         "2",
-        "3"
+        "3",
+        "4"
       ],
       "led_list": [],
       "reported_list": [],
       "report_title": "讲座实习报告-孙家丽",
       "report_url": "https://docs.qq.com/doc/DTXB3ZVJBYVRPZGVX",
       "lecture_time": "2026-08-17",
-      "last_modify_time": "2026-08-18 20:05",
+      "last_modify_time": "2026-08-24 17:06",
       "latest_report": "模拟讲座报告4",
       "latest_report_num": 4
     },
@@ -351,8 +354,8 @@
     },
     {
       "name": "徐星艳",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -360,12 +363,16 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DTXJMZXJ5R1B3bE1K",
       "lecture_time": "2026-08-23",
-      "last_modify_time": "2026-08-23 01:00",
+      "last_modify_time": "2026-08-24 16:30",
       "latest_report": "报告5",
       "latest_report_num": 5
     },
@@ -391,8 +398,8 @@
     },
     {
       "name": "郭晓娟",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -400,19 +407,23 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DRE54bFJyQWJmTmxG",
-      "lecture_time": "2026-08-14",
-      "last_modify_time": "2026-08-14 21:51",
-      "latest_report": "模拟讲座报告4",
-      "latest_report_num": 4
+      "lecture_time": "2026-08-20",
+      "last_modify_time": "2026-08-24 18:05",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "王利娟",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -420,8 +431,12 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV",
       "lecture_time": "2026-08-19",
@@ -579,7 +594,7 @@
     },
     {
       "name": "胡晓颖",
-      "total_led": 1,
+      "total_led": 2,
       "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
@@ -589,7 +604,8 @@
         "4"
       ],
       "led_list": [
-        "1"
+        "1",
+        "2"
       ],
       "reported_list": [
         "1"
@@ -661,7 +677,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DV2RkcmZhY2xWem9m",
       "lecture_time": "2026-08-07",
-      "last_modify_time": "2026-08-12 20:32",
+      "last_modify_time": "2026-08-24 11:51",
       "latest_report": "模拟讲座报告4",
       "latest_report_num": 4
     },
