@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 10:07:43",
+  "generated_at": "2026-08-26 10:10:11",
   "total_students": 40,
   "students": [
     {
@@ -248,7 +248,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DWVZURXhFc25FRVF2",
       "lecture_time": "2026-08-24",
-      "last_modify_time": "2026-08-24 23:38",
+      "last_modify_time": "2026-08-25 12:44",
       "latest_report": "报告10",
       "latest_report_num": 10
     },
@@ -548,7 +548,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DRU5RRkZLaFVCaGxF",
       "lecture_time": "2026-08-12",
-      "last_modify_time": "2026-08-23 00:06",
+      "last_modify_time": "2026-08-25 19:50",
       "latest_report": "报告10",
       "latest_report_num": 10
     },
@@ -568,7 +568,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DYXRERVRkU2hoc1ZU",
       "lecture_time": "2026-08-13",
-      "last_modify_time": "2026-08-16 20:19",
+      "last_modify_time": "2026-08-25 19:30",
       "latest_report": "模拟讲座报告4",
       "latest_report_num": 4
     },
@@ -612,10 +612,10 @@
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DYmpoTmdxWWNuWGhW",
-      "lecture_time": "2026-08-16",
-      "last_modify_time": "2026-08-17 17:41",
-      "latest_report": "报告5",
-      "latest_report_num": 5
+      "lecture_time": "2026-08-29",
+      "last_modify_time": "2026-08-25 11:38",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "付蓉蓉",
@@ -637,7 +637,7 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DSUR2VFdkZFpCUmh3#",
       "lecture_time": "2026-08-21",
-      "last_modify_time": "2026-08-22 18:16",
+      "last_modify_time": "2026-08-25 19:33",
       "latest_report": "报告10",
       "latest_report_num": 10
     },
@@ -700,10 +700,10 @@
       ],
       "report_title": "MIED讲座报告-督导用",
       "report_url": "https://docs.qq.com/doc/DZnd3bnhVVWVHUnNn",
-      "lecture_time": "2026-08-13",
-      "last_modify_time": "2026-08-21 00:40",
-      "latest_report": "报告5",
-      "latest_report_num": 5
+      "lecture_time": "2025-08-25",
+      "last_modify_time": "2026-08-25 20:42",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "刘萍",
@@ -794,7 +794,7 @@
     {
       "name": "黄彬彬",
       "total_led": 1,
-      "total_reported": 0,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -805,11 +805,13 @@
       "led_list": [
         "1"
       ],
-      "reported_list": [],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DZEh6RnNIQm1Gakp2",
       "lecture_time": "2026-08-22",
-      "last_modify_time": "2026-08-24 09:35",
+      "last_modify_time": "2026-08-25 10:48",
       "latest_report": "报告5",
       "latest_report_num": 5
     },
