@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 10:37:16",
+  "generated_at": "2026-09-01 10:09:11",
   "total_students": 40,
   "students": [
     {
@@ -275,10 +275,10 @@
       "reported_list": [],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DQ21QUW9pdURiYWZE",
-      "lecture_time": "2026-08-17",
+      "lecture_time": "",
       "last_modify_time": "2026-08-17 18:11",
-      "latest_report": "模拟讲座报告4",
-      "latest_report_num": 4
+      "latest_report": "",
+      "latest_report_num": 0
     },
     {
       "name": "孙艳丽",
@@ -455,10 +455,10 @@
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV",
-      "lecture_time": "2026-08-19",
+      "lecture_time": "",
       "last_modify_time": "2026-08-20 11:11",
-      "latest_report": "报告5",
-      "latest_report_num": 5
+      "latest_report": "",
+      "latest_report_num": 0
     },
     {
       "name": "孙永红",
@@ -891,6 +891,6 @@
   "stats": {
     "total": 40,
     "has_report": 40,
-    "has_lecture_time": 40
+    "has_lecture_time": 38
   }
 }
