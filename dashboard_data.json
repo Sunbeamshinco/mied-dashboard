@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07 10:25:57",
+  "generated_at": "2026-09-10 10:15:08",
   "total_students": 40,
   "students": [
     {
@@ -17,7 +17,7 @@
       "reported_list": [],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DTkN2TGFwa0VzR2xt#",
-      "lecture_time": "",
+      "lecture_time": "2026-08-03",
       "last_modify_time": ""
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "name": "李志",
-      "total_led": 0,
+      "total_led": 1,
       "total_reported": 0,
       "total_mock": 4,
       "mock_list": [
@@ -71,7 +71,9 @@
         "3",
         "4"
       ],
-      "led_list": [],
+      "led_list": [
+        "1"
+      ],
       "reported_list": [],
       "report_title": "副本-讲座实习报告-李志",
       "report_url": "https://docs.qq.com/doc/DYk5rS2xscG9xSnFs",
@@ -80,8 +82,8 @@
     },
     {
       "name": "董雪娟",
-      "total_led": 2,
-      "total_reported": 1,
+      "total_led": 3,
+      "total_reported": 2,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -91,10 +93,12 @@
       ],
       "led_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2"
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DY0NVSHdwUWRIemtF#",
@@ -175,8 +179,8 @@
     },
     {
       "name": "王振发",
-      "total_led": 2,
-      "total_reported": 2,
+      "total_led": 3,
+      "total_reported": 3,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -186,11 +190,13 @@
       ],
       "led_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "reported_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "report_title": "副本-讲座实习报告-xxx（姓名）",
       "report_url": "https://docs.qq.com/doc/DSXhQamZnYmZOcXpQ",
@@ -272,7 +278,7 @@
       "reported_list": [],
       "report_title": "讲座实习报告-孙艳丽",
       "report_url": "https://docs.qq.com/doc/DQkZ3cFhqcW1Cc05r?nlc=1",
-      "lecture_time": "",
+      "lecture_time": "2026-08-12",
       "last_modify_time": ""
     },
     {
@@ -331,8 +337,8 @@
     },
     {
       "name": "徐星艳",
-      "total_led": 2,
-      "total_reported": 2,
+      "total_led": 3,
+      "total_reported": 3,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -342,11 +348,13 @@
       ],
       "led_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "reported_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "report_title": "",
       "report_url": "",
@@ -422,7 +430,7 @@
       ],
       "report_title": "副本-副本-讲座实习报告-1（王利娟）",
       "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV",
-      "lecture_time": "",
+      "lecture_time": "2026-08-28",
       "last_modify_time": ""
     },
     {
@@ -487,8 +495,8 @@
     },
     {
       "name": "赵青",
-      "total_led": 1,
-      "total_reported": 1,
+      "total_led": 3,
+      "total_reported": 3,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -497,10 +505,14 @@
         "4"
       ],
       "led_list": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "report_title": "",
       "report_url": "",
@@ -509,8 +521,8 @@
     },
     {
       "name": "张佳",
-      "total_led": 1,
-      "total_reported": 1,
+      "total_led": 4,
+      "total_reported": 4,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -519,10 +531,16 @@
         "4"
       ],
       "led_list": [
-        "1"
+        "1",
+        "2",
+        "3",
+        "4"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2",
+        "3",
+        "4"
       ],
       "report_title": "",
       "report_url": "",
@@ -549,8 +567,8 @@
     },
     {
       "name": "范雯祎",
-      "total_led": 1,
-      "total_reported": 1,
+      "total_led": 2,
+      "total_reported": 2,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -559,10 +577,12 @@
         "4"
       ],
       "led_list": [
-        "1"
+        "1",
+        "2"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2"
       ],
       "report_title": "",
       "report_url": "",
@@ -571,8 +591,8 @@
     },
     {
       "name": "胡晓颖",
-      "total_led": 3,
-      "total_reported": 3,
+      "total_led": 4,
+      "total_reported": 4,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -583,12 +603,14 @@
       "led_list": [
         "1",
         "2",
-        "3"
+        "3",
+        "4"
       ],
       "reported_list": [
         "1",
         "2",
-        "3"
+        "3",
+        "4"
       ],
       "report_title": "副本-讲座实习报告-胡晓颖",
       "report_url": "https://docs.qq.com/doc/DYmpoTmdxWWNuWGhW",
@@ -619,8 +641,8 @@
     },
     {
       "name": "柴华",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 2,
+      "total_reported": 2,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -628,8 +650,14 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1",
+        "2"
+      ],
+      "reported_list": [
+        "1",
+        "2"
+      ],
       "report_title": "副本-讲座实习报告-柴华",
       "report_url": "https://docs.qq.com/doc/DQUJBR3dYVUx4TGtS",
       "lecture_time": "2026-08-16",
@@ -637,8 +665,8 @@
     },
     {
       "name": "陈超美",
-      "total_led": 0,
-      "total_reported": 0,
+      "total_led": 1,
+      "total_reported": 1,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -646,8 +674,12 @@
         "3",
         "4"
       ],
-      "led_list": [],
-      "reported_list": [],
+      "led_list": [
+        "1"
+      ],
+      "reported_list": [
+        "1"
+      ],
       "report_title": "副本-讲座实习报告-陈超美",
       "report_url": "https://docs.qq.com/doc/DV2RkcmZhY2xWem9m",
       "lecture_time": "2026-08-07",
@@ -761,8 +793,8 @@
     },
     {
       "name": "黄彬彬",
-      "total_led": 2,
-      "total_reported": 1,
+      "total_led": 3,
+      "total_reported": 3,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -772,20 +804,23 @@
       ],
       "led_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "reported_list": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "report_title": "副本-讲座实习报告--黄彬彬",
       "report_url": "https://docs.qq.com/doc/DZEh6RnNIQm1Gakp2",
-      "lecture_time": "",
+      "lecture_time": "2026-09-08",
       "last_modify_time": ""
     },
     {
       "name": "马昌丽",
-      "total_led": 2,
-      "total_reported": 2,
+      "total_led": 3,
+      "total_reported": 3,
       "total_mock": 4,
       "mock_list": [
         "1",
@@ -795,11 +830,13 @@
       ],
       "led_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "reported_list": [
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "report_title": "副本-讲座实习报告-马昌丽",
       "report_url": "https://docs.qq.com/doc/DRFREZG9UUmtiYXdn",
@@ -827,11 +864,11 @@
   ],
   "stats": {
     "total": 40,
-    "led_count": 18,
-    "reported_count": 17,
+    "led_count": 21,
+    "reported_count": 19,
     "mock_count": 40,
     "has_report": 29,
-    "has_lecture_time": 24,
+    "has_lecture_time": 28,
     "has_internal_title": 25
   }
 }
