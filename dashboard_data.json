@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12 10:29:09",
+  "generated_at": "2026-10-12 15:31:32",
   "total_students": 40,
   "students": [
     {
@@ -296,8 +296,8 @@
         "1",
         "2"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "刘春晖讲座实习报告",
+      "report_url": "https://docs.qq.com/doc/YVTExEsnEEQv",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -448,8 +448,8 @@
         "2",
         "3"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-徐星艳",
+      "report_url": "https://docs.qq.com/doc/MrLeryGPwlMJ",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -471,8 +471,8 @@
         "4"
       ],
       "reported_list": [],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-郑诗雨",
+      "report_url": "https://docs.qq.com/doc/UHGQGWEXtoLh",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -556,8 +556,8 @@
         "1",
         "2"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-孙永红",
+      "report_url": "https://docs.qq.com/doc/GHmxJKEKhaEW",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -638,8 +638,8 @@
         "5",
         "6"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-赵青",
+      "report_url": "https://docs.qq.com/doc/aqFDmiDlVsqI",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -670,8 +670,8 @@
         "5",
         "6"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-张佳",
+      "report_url": "https://docs.qq.com/doc/ENQFFKhUBhlE",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -688,8 +688,8 @@
       ],
       "led_list": [],
       "reported_list": [],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-吴岳",
+      "report_url": "https://docs.qq.com/doc/atDETdShhsVT",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -718,8 +718,8 @@
         "3",
         "4"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-范雯祎",
+      "report_url": "https://docs.qq.com/doc/cpzQzHCjZzMo",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -853,8 +853,8 @@
       "reported_list": [
         "1"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-张圣楠",
+      "report_url": "https://docs.qq.com/doc/fwwnxUUeGRsg",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -941,8 +941,8 @@
       "reported_list": [
         "1"
       ],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-陈小晨",
+      "report_url": "https://docs.qq.com/doc/VGGVLMIlDlcZ",
       "lecture_time": "",
       "last_modify_time": ""
     },
@@ -1058,8 +1058,8 @@
         "6"
       ],
       "reported_list": [],
-      "report_title": "",
-      "report_url": "",
+      "report_title": "讲座实习报告-邢文馨",
+      "report_url": "https://docs.qq.com/doc/dKRhDAmzdYMt",
       "lecture_time": "",
       "last_modify_time": ""
     }
@@ -1069,8 +1069,8 @@
     "led_count": 37,
     "reported_count": 34,
     "mock_count": 40,
-    "has_report": 29,
+    "has_report": 40,
     "has_lecture_time": 28,
-    "has_internal_title": 25
+    "has_internal_title": 36
   }
 }
