@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12 15:31:32",
+  "generated_at": "2026-10-12 15:42:39",
   "total_students": 40,
   "students": [
     {
@@ -20,10 +20,12 @@
       "reported_list": [
         "1"
       ],
-      "report_title": "",
+      "report_title": "讲座实习报告-苏凤然",
       "report_url": "https://docs.qq.com/doc/DTkN2TGFwa0VzR2xt#",
-      "lecture_time": "2026-08-03",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-20",
+      "last_modify_time": "2026-09-22 10:58",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "段海容",
@@ -49,8 +51,10 @@
       ],
       "report_title": "副本-讲座实习报告-xxx（姓名）",
       "report_url": "https://docs.qq.com/doc/DTE9rZWpqdVNUWm5m",
-      "lecture_time": "2026-08-28",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-22",
+      "last_modify_time": "2026-09-29 19:08",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "孙英",
@@ -79,8 +83,10 @@
       ],
       "report_title": "副本-讲座实习报告-孙英",
       "report_url": "https://docs.qq.com/doc/DQkZ3TG14aGhsdU9D",
-      "lecture_time": "2026-08-29",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-28",
+      "last_modify_time": "2026-10-07 20:40",
+      "latest_report": "报告9",
+      "latest_report_num": 9
     },
     {
       "name": "李志",
@@ -106,8 +112,10 @@
       ],
       "report_title": "副本-讲座实习报告-李志",
       "report_url": "https://docs.qq.com/doc/DYk5rS2xscG9xSnFs",
-      "lecture_time": "2026-09-03",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-17",
+      "last_modify_time": "2026-10-01 23:33",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "董雪娟",
@@ -137,8 +145,10 @@
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DY0NVSHdwUWRIemtF#",
-      "lecture_time": "2026-09-16",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-28",
+      "last_modify_time": "2026-10-12 11:37",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "屈佩珊",
@@ -155,8 +165,10 @@
       "reported_list": [],
       "report_title": "讲座实习报告-屈佩珊",
       "report_url": "https://docs.qq.com/doc/DTnRQYVpFdndvQ1p1",
-      "lecture_time": "2026-08-06",
-      "last_modify_time": ""
+      "lecture_time": "2026-08-13",
+      "last_modify_time": "2026-08-17 15:53",
+      "latest_report": "模拟讲座报告4",
+      "latest_report_num": 4
     },
     {
       "name": "王琳",
@@ -179,8 +191,10 @@
       ],
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DU2RSZ0VoSHpHSGds",
-      "lecture_time": "2026-08-13",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-17",
+      "last_modify_time": "2026-09-18 12:01",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "高扬",
@@ -197,8 +211,10 @@
       "reported_list": [],
       "report_title": "副本-讲座实习报告-高扬",
       "report_url": "https://docs.qq.com/doc/DQkRBbVBnYU5RZVRs",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "lecture_time": "2026-08-13",
+      "last_modify_time": "2026-08-16 11:12",
+      "latest_report": "模拟讲座报告4",
+      "latest_report_num": 4
     },
     {
       "name": "刘伟",
@@ -223,8 +239,10 @@
       ],
       "report_title": "讲座实习报告-刘伟",
       "report_url": "https://docs.qq.com/doc/DSkNDc1N1c2JTR1Zh",
-      "lecture_time": "2026-09-10",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-11",
+      "last_modify_time": "2026-10-11 23:29",
+      "latest_report": "报告8",
+      "latest_report_num": 8
     },
     {
       "name": "王振发",
@@ -251,7 +269,9 @@
       "report_title": "副本-讲座实习报告-xxx（姓名）",
       "report_url": "https://docs.qq.com/doc/DSXhQamZnYmZOcXpQ",
       "lecture_time": "2026-09-02",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-08 09:54",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "苏秀梅",
@@ -274,8 +294,10 @@
       ],
       "report_title": "副本-讲座实习报告-苏秀梅（姓名）",
       "report_url": "https://docs.qq.com/doc/DZmNiRVhuUEZzWE5N",
-      "lecture_time": "2026-08-22",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-27",
+      "last_modify_time": "2026-09-30 17:37",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "刘春晖",
@@ -297,9 +319,11 @@
         "2"
       ],
       "report_title": "刘春晖讲座实习报告",
-      "report_url": "https://docs.qq.com/doc/YVTExEsnEEQv",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DWVZURXhFc25FRVF2",
+      "lecture_time": "2026-08-24",
+      "last_modify_time": "1970-01-12 01:24",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "陈硕",
@@ -323,8 +347,10 @@
       ],
       "report_title": "讲座实习报告-陈硕",
       "report_url": "https://docs.qq.com/doc/DQ21QUW9pdURiYWZE",
-      "lecture_time": "2026-08-17",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-17",
+      "last_modify_time": "2026-10-07 10:06",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "孙艳丽",
@@ -351,8 +377,10 @@
       ],
       "report_title": "讲座实习报告-孙艳丽",
       "report_url": "https://docs.qq.com/doc/DQkZ3cFhqcW1Cc05r?nlc=1",
-      "lecture_time": "2026-08-12",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-25",
+      "last_modify_time": "2026-10-11 21:31",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "黄琳",
@@ -377,8 +405,10 @@
       ],
       "report_title": "讲座实习报告-黄琳",
       "report_url": "https://docs.qq.com/doc/DSGVaRFdzZVFGZkhU",
-      "lecture_time": "2026-08-14",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-09",
+      "last_modify_time": "2026-10-09 18:56",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "孙家丽",
@@ -397,10 +427,12 @@
         "3"
       ],
       "reported_list": [],
-      "report_title": "副本-讲座实习报告-xxx（姓名）",
+      "report_title": "讲座实习报告-孙家丽",
       "report_url": "https://docs.qq.com/doc/DTXB3ZVJBYVRPZGVX",
-      "lecture_time": "2026-08-10",
-      "last_modify_time": ""
+      "lecture_time": "2026-08-17",
+      "last_modify_time": "2026-08-24 17:06",
+      "latest_report": "模拟讲座报告4",
+      "latest_report_num": 4
     },
     {
       "name": "李梦娜",
@@ -423,8 +455,10 @@
       ],
       "report_title": "讲座实习报告-李梦娜",
       "report_url": "https://docs.qq.com/doc/DRXRQdVNDTG5VR3FW",
-      "lecture_time": "2026-08-16",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-09",
+      "last_modify_time": "2026-10-12 15:38",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "徐星艳",
@@ -449,9 +483,11 @@
         "3"
       ],
       "report_title": "讲座实习报告-徐星艳",
-      "report_url": "https://docs.qq.com/doc/MrLeryGPwlMJ",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DTXJMZXJ5R1B3bE1K",
+      "lecture_time": "2026-10-10",
+      "last_modify_time": "1970-01-09 12:22",
+      "latest_report": "报告8",
+      "latest_report_num": 8
     },
     {
       "name": "郑诗雨",
@@ -472,9 +508,11 @@
       ],
       "reported_list": [],
       "report_title": "讲座实习报告-郑诗雨",
-      "report_url": "https://docs.qq.com/doc/UHGQGWEXtoLh",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DVUhHUUdXRVh0b0xo",
+      "lecture_time": "2026-08-28",
+      "last_modify_time": "1970-01-16 03:47",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "郭晓娟",
@@ -501,8 +539,10 @@
       ],
       "report_title": "副本-讲座实习报告-郭晓娟",
       "report_url": "https://docs.qq.com/doc/DRE54bFJyQWJmTmxG",
-      "lecture_time": "2026-09-03",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-17",
+      "last_modify_time": "2026-10-07 10:49",
+      "latest_report": "报告8",
+      "latest_report_num": 8
     },
     {
       "name": "王利娟",
@@ -534,7 +574,9 @@
       "report_title": "副本-副本-讲座实习报告-1（王利娟）",
       "report_url": "https://docs.qq.com/doc/DYmF0SVJ0eWd0SndV",
       "lecture_time": "2026-09-18",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-07 20:53",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "孙永红",
@@ -557,9 +599,11 @@
         "2"
       ],
       "report_title": "讲座实习报告-孙永红",
-      "report_url": "https://docs.qq.com/doc/GHmxJKEKhaEW",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DR0hteEpLRUtoYUVX",
+      "lecture_time": "2026-09-10",
+      "last_modify_time": "1970-01-05 16:18",
+      "latest_report": "报告7",
+      "latest_report_num": 7
     },
     {
       "name": "李亚云",
@@ -582,8 +626,10 @@
       ],
       "report_title": "讲座实习报告-李亚云",
       "report_url": "https://docs.qq.com/doc/DVUJXZUpORkhIS0hI?nlc=1",
-      "lecture_time": "2026-08-17",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-11",
+      "last_modify_time": "2026-10-11 20:56",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "龚辰炜",
@@ -609,7 +655,9 @@
       "report_title": "讲座实习报告-龚辰炜",
       "report_url": "https://docs.qq.com/doc/DQUV5Q0tQcFJEeEZk",
       "lecture_time": "2026-08-26",
-      "last_modify_time": ""
+      "last_modify_time": "2026-08-30 23:25",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "赵青",
@@ -639,9 +687,11 @@
         "6"
       ],
       "report_title": "讲座实习报告-赵青",
-      "report_url": "https://docs.qq.com/doc/aqFDmiDlVsqI",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DYXFGRG1pRGxWc3FJ",
+      "lecture_time": "2026-09-23",
+      "last_modify_time": "1970-02-15 23:00",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "张佳",
@@ -671,9 +721,11 @@
         "6"
       ],
       "report_title": "讲座实习报告-张佳",
-      "report_url": "https://docs.qq.com/doc/ENQFFKhUBhlE",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DRU5RRkZLaFVCaGxF",
+      "lecture_time": "2026-09-24",
+      "last_modify_time": "1970-01-09 17:04",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "吴岳",
@@ -689,9 +741,11 @@
       "led_list": [],
       "reported_list": [],
       "report_title": "讲座实习报告-吴岳",
-      "report_url": "https://docs.qq.com/doc/atDETdShhsVT",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DYXRERVRkU2hoc1ZU",
+      "lecture_time": "2026-08-13",
+      "last_modify_time": "1970-01-12 08:10",
+      "latest_report": "模拟讲座报告4",
+      "latest_report_num": 4
     },
     {
       "name": "范雯祎",
@@ -719,9 +773,11 @@
         "4"
       ],
       "report_title": "讲座实习报告-范雯祎",
-      "report_url": "https://docs.qq.com/doc/cpzQzHCjZzMo",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DY3B6UXpIQ2paek1v",
+      "lecture_time": "2026-10-01",
+      "last_modify_time": "1970-01-05 06:17",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "胡晓颖",
@@ -752,8 +808,10 @@
       ],
       "report_title": "副本-讲座实习报告-胡晓颖",
       "report_url": "https://docs.qq.com/doc/DYmpoTmdxWWNuWGhW",
-      "lecture_time": "2026-09-19",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-26",
+      "last_modify_time": "2026-10-07 17:56",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "付蓉蓉",
@@ -775,7 +833,9 @@
       "report_title": "",
       "report_url": "https://docs.qq.com/doc/DSUR2VFdkZFpCUmh3#",
       "lecture_time": "2026-08-21",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-07 10:44",
+      "latest_report": "报告5",
+      "latest_report_num": 5
     },
     {
       "name": "柴华",
@@ -800,8 +860,10 @@
       ],
       "report_title": "副本-讲座实习报告-柴华",
       "report_url": "https://docs.qq.com/doc/DQUJBR3dYVUx4TGtS",
-      "lecture_time": "2026-09-19",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-03",
+      "last_modify_time": "2026-10-07 09:18",
+      "latest_report": "报告6",
+      "latest_report_num": 6
     },
     {
       "name": "陈超美",
@@ -828,8 +890,10 @@
       ],
       "report_title": "副本-讲座实习报告-陈超美",
       "report_url": "https://docs.qq.com/doc/DV2RkcmZhY2xWem9m",
-      "lecture_time": "2026-08-07",
-      "last_modify_time": ""
+      "lecture_time": "2026-09-30",
+      "last_modify_time": "2026-10-10 15:30",
+      "latest_report": "报告8",
+      "latest_report_num": 8
     },
     {
       "name": "张圣楠",
@@ -854,9 +918,11 @@
         "1"
       ],
       "report_title": "讲座实习报告-张圣楠",
-      "report_url": "https://docs.qq.com/doc/fwwnxUUeGRsg",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DZnd3bnhVVWVHUnNn",
+      "lecture_time": "2026-09-21",
+      "last_modify_time": "1970-02-09 03:07",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "刘萍",
@@ -888,7 +954,9 @@
       "report_title": "副本-讲座实习报告-刘萍",
       "report_url": "https://docs.qq.com/doc/DVWVtdkdycFZScWtk?nlc=1",
       "lecture_time": "2026-09-16",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-07 19:42",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "李越阳",
@@ -917,8 +985,10 @@
       ],
       "report_title": "副本-讲座实习报告-1（李越阳）",
       "report_url": "https://docs.qq.com/doc/DQ2pUbG9jTExiVUNm",
-      "lecture_time": "2026-09-17",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-08",
+      "last_modify_time": "2026-10-10 09:58",
+      "latest_report": "报告9",
+      "latest_report_num": 9
     },
     {
       "name": "陈小晨",
@@ -942,9 +1012,11 @@
         "1"
       ],
       "report_title": "讲座实习报告-陈小晨",
-      "report_url": "https://docs.qq.com/doc/VGGVLMIlDlcZ",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DVkdHVkxNSWxEbGNa",
+      "lecture_time": "2026-09-30",
+      "last_modify_time": "1970-01-05 05:56",
+      "latest_report": "报告9",
+      "latest_report_num": 9
     },
     {
       "name": "马淑华",
@@ -971,8 +1043,10 @@
       ],
       "report_title": "讲座实习报告-马淑华",
       "report_url": "https://docs.qq.com/doc/DZXZPUExodmNuYUFU",
-      "lecture_time": "2026-09-03",
-      "last_modify_time": ""
+      "lecture_time": "2026-10-08",
+      "last_modify_time": "2026-10-08 21:37",
+      "latest_report": "报告9",
+      "latest_report_num": 9
     },
     {
       "name": "黄彬彬",
@@ -1004,7 +1078,9 @@
       "report_title": "副本-讲座实习报告--黄彬彬",
       "report_url": "https://docs.qq.com/doc/DZEh6RnNIQm1Gakp2",
       "lecture_time": "2026-09-12",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-07 18:21",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "马昌丽",
@@ -1036,7 +1112,9 @@
       "report_title": "副本-讲座实习报告-马昌丽",
       "report_url": "https://docs.qq.com/doc/DRFREZG9UUmtiYXdn",
       "lecture_time": "2026-09-23",
-      "last_modify_time": ""
+      "last_modify_time": "2026-10-07 20:10",
+      "latest_report": "报告10",
+      "latest_report_num": 10
     },
     {
       "name": "邢文馨",
@@ -1059,9 +1137,11 @@
       ],
       "reported_list": [],
       "report_title": "讲座实习报告-邢文馨",
-      "report_url": "https://docs.qq.com/doc/dKRhDAmzdYMt",
-      "lecture_time": "",
-      "last_modify_time": ""
+      "report_url": "https://docs.qq.com/doc/DZEtSaERBbXpkWU10",
+      "lecture_time": "2026-08-13",
+      "last_modify_time": "1970-01-01 13:30",
+      "latest_report": "模拟讲座报告4",
+      "latest_report_num": 4
     }
   ],
   "stats": {
@@ -1070,7 +1150,7 @@
     "reported_count": 34,
     "mock_count": 40,
     "has_report": 40,
-    "has_lecture_time": 28,
+    "has_lecture_time": 40,
     "has_internal_title": 36
   }
 }
